@@ -7,7 +7,7 @@
 
 import { App, plugin } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
-import '../css/app.css'
+import "tailwindcss/tailwind.css"
 
 Vue.use(plugin)
 
