@@ -7,19 +7,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About To-Do
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+To-Do is a web application built as a server-side single page application using laravel, inertiajs and vuejsframework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. To-Do takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [Simple, fast routing engine](https://github.com/Odumz/todo-app/routing).
+- [Powerful dependency injection container](https://github.com/Odumz/todo-app/container).
+- Multiple back-ends for [session](https://github.com/Odumz/todo-app/session) and [cache](https://github.com/Odumz/todo-app/cache) storage.
+- Expressive, intuitive [database ORM](https://github.com/Odumz/todo-app/eloquent).
+- Database agnostic [schema migrations](https://github.com/Odumz/todo-app/migrations).
+- [Robust background job processing](https://github.com/Odumz/todo-app/queues).
+- [Real-time event broadcasting](https://github.com/Odumz/todo-app/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+to-do is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Learning Laravel
 
