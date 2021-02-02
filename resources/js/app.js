@@ -8,6 +8,12 @@
 import { App, plugin } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
 import "tailwindcss/tailwind.css"
+import VueMeta from 'vue-meta'
+
+Vue.use(VueMeta, {
+  // optional pluginOptions
+  refreshOnceOnNavigation: true
+})
 
 Vue.use(plugin)
 

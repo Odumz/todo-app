@@ -31,56 +31,45 @@
                 </svg>
             </div> -->
             <!-- component -->
-            <div class="tw-h-100 tw-w-full tw-flex tw-items-center tw-justify-center tw-font-sans">
-                <div class="tw-bg-white tw-rounded tw-ring tw-p-6 tw-m-4 tw-w-full lg:tw-w-3/4 lg:tw-max-w-lg">
-                    <div class="tw-mb-4">
-                        <!-- <h1 class=" tw-text-gray-700">Todo List</h1> -->
-                        <div class="tw-flex tw-mt-4">
-                            <input class="tw-ring-1 tw-appearance-none tw-border tw-border-green-300 hover:tw-border-green-500 focus:tw-border-green-500 tw-rounded tw-w-full tw-py-2 tw-px-3 tw-mr-4 tw-text-gray-800" placeholder="Add Todo">
-                            <button class="tw-flex-no-shrink tw-p-2 tw-border-2 tw-rounded tw-text-green-400 tw-border-green-400 hover:tw-text-white hover:tw-bg-green-400">Add</button>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="tw-flex tw-mb-4 tw-items-center">
-                            <p class="tw-w-full tw-text-gray-600" :class="[done ? 'tw-line-through tw-text-green-500' : '']">Add another component to Tailwind Components</p>
-                            <button class="tw-flex-no-shrink tw-p-2 tw-ml-4 tw-mr-2 tw-border-2 tw-rounded hover:tw-text-white tw-text-green tw-border-green hover:tw-bg-green" v-on:click=toggleDone() >Done</button>
-                            <button class="tw-flex-no-shrink tw-p-2 tw-ml-2 tw-border-2 tw-rounded tw-text-red-400 tw-border-red-400 hover:tw-text-white hover:tw-bg-red-400">
-                                Delete
-                            </button>
-                        </div>
-                        <div class="tw-flex tw-mb-4 tw-items-center">
-                            <p class="tw-w-full tw-text-gray-600" :class="[done ? 'tw-line-through tw-text-green-500' : '']">Submit Todo App Component to Tailwind Components</p>
-                            <button class="tw-flex-no-shrink tw-p-2 tw-ml-4 tw-mr-2 tw-border-2 tw-rounded hover:tw-text-white tw-text-green tw-border-green hover:tw-bg-green" v-on:click=toggleDone() >Done</button>
-                            <button class="tw-flex-no-shrink tw-p-2 tw-ml-2 tw-border-2 tw-rounded tw-text-red-400 tw-border-red-400 hover:tw-text-white hover:tw-bg-red-400">
-                                Delete
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="tw-font-bold">Welcome {{title}}</p>
+            <list-view />
+            <add-todo-form />
         </div>
         
     </div>
 </template>
 
 <script>
+import AddTodoForm from '../components/addTodoForm.vue';
+import ListView from '../components/listView.vue';
+
 export default {
     name: "app",
+    metaInfo() {
+      return {
+        title: `Welcome ${this.user.name}`,
+      }
+    },
     data() {
         return {
-            done: false
+            done: false,
+            todo: {},
         }
     },
-    props: ['title', 'description'],
+    props: {
+        todo: Object,
+    },
     methods: {
         toggleDone: function () {
             this.done = !this.done
         }
     },
+    components: {
+        AddTodoForm,
+        ListView
+    }
 }
 </script>
 
 <style scoped>
-background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+/* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
 </style>
