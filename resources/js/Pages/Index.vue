@@ -2,7 +2,7 @@
     <div class="tw-h-screen tw-w-screen tw-py-10 tw-px-4 md:tw-p-auto tw-bg-gradient-to-r tw-bg-gradient tw-from-green-400 tw-via-blue-500 tw-to-gray-800">
         <div class=" tw-min-h-0">
             <div class="">
-                <div class="tw-bg-indigo-600 tw-mb-10 tw-mx-auto tw-w-3/6">
+                <div class="tw-bg-indigo-600 tw-mb-3 tw-mx-auto tw-w-3/6">
                     <div class="tw-max-w-7xl tw-mx-auto tw-py-3 tw-px-3 sm:tw-px-6 lg:tw-px-8">
                         <div class="tw-flex tw-items-center tw-justify-between tw-flex-wrap">
                         <div class="tw-w-0 tw-flex-1 tw-flex tw-items-center">
@@ -31,7 +31,7 @@
                 </svg>
             </div> -->
             <!-- component -->
-            <list-view />
+            <list-view class="tw-w-2/3" :todos="todos"/>
             <add-todo-form />
         </div>
         
@@ -41,27 +41,37 @@
 <script>
 import AddTodoForm from '../components/addTodoForm.vue';
 import ListView from '../components/listView.vue';
+import axios from 'axios';
 
 export default {
-    name: "app",
+    // name: "app",
     metaInfo() {
       return {
-        title: `Welcome ${this.user.name}`,
+        title: `Welcome Alfred!`,
       }
     },
     data() {
         return {
-            done: false,
-            todo: {},
+            todos: []
         }
     },
     props: {
         todo: Object,
     },
     methods: {
-        toggleDone: function () {
-            this.done = !this.done
+        getTodo () {
+            axios.get('api/todo')
+            .then (response => {
+                this.todos = response.data
+            })
+            .catch (error => {
+                console.log(error);
+            })
         }
+    },
+    created() {
+        console.log('I have gotten here')
+        this.getTodo();
     },
     components: {
         AddTodoForm,
