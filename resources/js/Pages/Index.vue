@@ -1,6 +1,6 @@
 <template>
     <div class="tw-h-screen tw-w-screen tw-py-10 tw-px-4 md:tw-p-auto tw-bg-gradient-to-r tw-bg-gradient tw-from-green-400 tw-via-blue-500 tw-to-gray-800">
-        <div class=" tw-min-h-0">
+        <div class="tw-flex tw-flex-col">
             <div class="">
                 <div class="tw-bg-indigo-600 tw-mb-3 tw-mx-auto tw-w-3/6">
                     <div class="tw-max-w-7xl tw-mx-auto tw-py-3 tw-px-3 sm:tw-px-6 lg:tw-px-8">
@@ -31,8 +31,9 @@
                 </svg>
             </div> -->
             <!-- component -->
-            <list-view class="tw-w-2/3" :todos="todos"/>
-            <add-todo-form />
+            <list-view class="tw-w-2/3" :todos="todos"
+            v-on:reloadlist="getTodo()"/>
+            <add-todo-form class="tw-flex tw-justify-center tw--mt-14" v-on:todochanged="getTodo()" />
         </div>
         
     </div>
@@ -70,7 +71,7 @@ export default {
         }
     },
     created() {
-        console.log('I have gotten here')
+        // console.log('I have gotten here')
         this.getTodo();
     },
     components: {
