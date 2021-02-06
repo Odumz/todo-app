@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 use App\Http\Controllers\TodoController;
 
 /*
@@ -19,4 +19,14 @@ use App\Http\Controllers\TodoController;
 //     return view('welcome');
 // });
 
-Route::get('/', [TodoController::class, 'index']);
+// Route::get('/todo', [TodoController::class, 'index']);
+
+// Route::prefix('/todo')->group( function () {
+//     Route::get('/', [TodoController::class, 'index']);
+//     Route::post('/store', [TodoController::class, 'store']);
+//     Route::put('/{id}', [TodoController::class, 'update']);
+//     Route::delete('/{id}', [TodoController::class, 'destroy']);
+// });
+
+Route::get('/todo', [TodoController::class, 'display']);
+
