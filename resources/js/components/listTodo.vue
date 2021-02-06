@@ -1,7 +1,7 @@
 <template>
     <div class="container tw-flex tw-flex-row">
         <div class="tw-w-5/6">
-            <input v-model="todo.done" :class="[todo.done ? 'done' : '', 'tw-mx-2']"  type="checkbox" @change="updateCheck()" class=" round">
+            <input v-model="todo.done" :class="[todo.done ? 'done' : '', 'tw-mx-2']"  type="checkbox" @change="updateCheck()" class="">
             <label :class="[todo.done ? 'done' : '']" for="one">{{ todo.title }}</label>
         </div>
         <div class="tw-w-1/6">
