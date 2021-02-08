@@ -92,6 +92,7 @@ class TodoController extends Controller
     {
         $existingTodo = Todo::find( $id );
         if ( $existingTodo ) {
+            $existingTodo->title = $request->todo['title'];
             $existingTodo->done = $request->todo['done'] ? true : false;
             $existingTodo->completed_at = $request->todo['done'] ? Carbon::now() : null;
             $existingTodo->save();

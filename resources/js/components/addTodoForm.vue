@@ -11,6 +11,8 @@
 </template>
 <script>
 import axios from 'axios'
+import swal from 'sweetalert'
+
 export default {
     data: function() {
         return {
@@ -20,12 +22,9 @@ export default {
         }
     },
     methods: {
-        showInputField() {
-            // change display of the input field
-        },
         storeTodo() {
             if (this.todo.title == '') {
-                return alert('You need to type something');
+                return swal('No input', 'You need to type something', 'info');
             }
             axios.post('api/todo/store', {
                 todo: this.todo
@@ -34,6 +33,10 @@ export default {
                 if (response.status == 201) {
                     this.todo.title = "";
                     this.$emit('todochanged');
+                    return swal({
+                        title: 'Todo saved!',
+                        icon: 'success',
+                    });
                 }
             })
             .catch (error => {

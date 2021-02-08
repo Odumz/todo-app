@@ -21,6 +21,7 @@
 </template>
 <script>
 import axios from 'axios'
+import swal from 'sweetalert'
 
 export default {
     props: ['todo'],
@@ -51,6 +52,11 @@ export default {
             .then ( response => {
                 if (response.status == 200 ) {
                     this.$emit('todochanged');
+                    return swal({
+                        title: 'Deleted!',
+                        text: 'Todo deleted successfully!',
+                        icon: 'success'
+                        });
                 }
             })
             .catch ( error => {
@@ -64,6 +70,10 @@ export default {
             .then ( response => {
                 if (response.status == 200 ) {
                     this.$emit('todochanged');
+                    swal({
+                        title: 'Updated',
+                        text: 'Todo updated successfully', icon: 'success'
+                        });
                     return this.edit = false;
                 }
             })

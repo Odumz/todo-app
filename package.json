@@ -36,6 +36,7 @@
         "eslint-plugin-vue": "^7.5.0",
         "postcss-import": "^14.0.0",
         "postcss-nested": "^5.0.3",
+        "sweetalert": "^2.1.2",
         "vue-meta": "^2.4.0"
     }
 }
