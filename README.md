@@ -1,27 +1,27 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p> -->
 
-<p align="center">
+<!-- <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+</p> -->
 
 ## About To-Do
 
 To-Do is a web application built as a server-side single page application using laravel, inertiajs and vuejsframework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. To-Do takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://github.com/Odumz/todo-app/routing).
-- [Powerful dependency injection container](https://github.com/Odumz/todo-app/container).
+<!-- - [Routes](https://github.com/Odumz/todo-app/routing). -->
+<!-- - [Powerful dependency injection container](https://github.com/Odumz/todo-app/container).
 - Multiple back-ends for [session](https://github.com/Odumz/todo-app/session) and [cache](https://github.com/Odumz/todo-app/cache) storage.
-- Expressive, intuitive [database ORM](https://github.com/Odumz/todo-app/eloquent).
-- Database agnostic [schema migrations](https://github.com/Odumz/todo-app/migrations).
+- Expressive, intuitive [database ORM](https://github.com/Odumz/todo-app/eloquent). -->
+<!-- - Database agnostic [schema migrations](https://github.com/Odumz/todo-app/migrations).
 - [Robust background job processing](https://github.com/Odumz/todo-app/queues).
-- [Real-time event broadcasting](https://github.com/Odumz/todo-app/broadcasting).
+- [Real-time event broadcasting](https://github.com/Odumz/todo-app/broadcasting). -->
 
 to-do is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+<!-- ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
@@ -48,12 +48,12 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 ## Contributing
 
 Thank you for considering contributing to the my app! 
-## The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions). -->
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within the app, please send an e-mail to Taylor Otwell via [odumz20@gamil.com](mailto:odumz20@gmail.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within the app, please send an e-mail to Biodun via [odumz20@gamil.com](mailto:odumz20@gmail.com). All security vulnerabilities will be promptly addressed.
 
-## License
+<!-- ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
