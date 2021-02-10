@@ -9,7 +9,7 @@
 
 ## About To-Do
 
-To-Do is a web application built as a server-side single page application using laravel, inertiajs and vuejsframework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. To-Do takes the pain out of development by easing common tasks used in many web projects, such as:
+To-Do is a web application built as a server-side single page application using laravel, inertiajs and vuejs framework with expressive, elegant syntax. This is a fun project that I decided to try out to learn how inertia works. 
 
 <!-- - [Routes](https://github.com/Odumz/todo-app/routing). -->
 <!-- - [Powerful dependency injection container](https://github.com/Odumz/todo-app/container).
@@ -17,11 +17,11 @@ To-Do is a web application built as a server-side single page application using 
 - Expressive, intuitive [database ORM](https://github.com/Odumz/todo-app/eloquent). -->
 <!-- - Database agnostic [schema migrations](https://github.com/Odumz/todo-app/migrations).
 - [Robust background job processing](https://github.com/Odumz/todo-app/queues).
-- [Real-time event broadcasting](https://github.com/Odumz/todo-app/broadcasting). -->
+- [Real-time event broadcasting](https://github.com/Odumz/todo-app/broadcasting). 
 
 to-do is accessible, powerful, and provides tools required for large, robust applications.
 
-<!-- ## Learning Laravel
+## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
