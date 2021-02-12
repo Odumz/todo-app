@@ -3,7 +3,7 @@
         <div class="tw-w-5/6">
             <input v-if="!this.edit" v-model="todo.done" :class="[todo.done ? 'done' : '', 'tw-mx-2']"  type="checkbox" @change="updateCheck()">
             <label v-if="!this.edit" :class="[todo.done ? 'done' : '']" for="one">{{ todo.title }}</label>
-            <input v-if="this.edit" v-model="todo.title" class="tw-border-b-2 tw-border-green-400 tw-w-full tw-outline-none" type="text" value="todo.title" @change="updateCheck()" @click="edit()">
+            <input v-if="this.edit" v-model="todo.title" class="tw-border-b-2 tw-border-green-400 tw-px-5 tw-w-5/6 tw-outline-none" type="text" value="todo.title" @change="updateCheck()" @click="edit()">
             <!-- <label :class="[todo.done ? 'done' : '']" for="one">{{ todo.title }}</label> -->
         </div>
         <div class="tw-w-1/6 tw-flex tw-flex-row">

@@ -28,5 +28,5 @@ use App\Http\Controllers\TodoController;
 //     Route::delete('/{id}', [TodoController::class, 'destroy']);
 // });
 
-Route::get('/todo', [TodoController::class, 'display']);
+Route::get('/', [TodoController::class, 'display']);
 
