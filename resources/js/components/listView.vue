@@ -3,7 +3,7 @@
         <div class="tw-h-100 tw-w-full tw-flex tw-items-center tw-justify-center tw-font-sans">
                 <div class="tw-bg-white tw-rounded tw-ring tw-p-6 tw-m-4 tw-w-full lg:tw-w-3/4 lg:tw-max-w-lg">
                     <div class="tw-mb-8">
-                        <div class="tw-flex tw-items-center tw-justify-center" v-for="(todo, index) in todos" :key="index">
+                        <div class="tw-flex tw-mx-auto tw-items-center tw-justify-center" v-for="(todo, index) in todos" :key="index">
                             <!-- <p class="tw-w-full tw-text-gray-600" :class="[done ? 'tw-line-through tw-text-green-500' : '']">Add another component to Tailwind Components</p> -->
                             <list-todo 
                                 :todo="todo"

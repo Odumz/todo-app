@@ -1,5 +1,5 @@
 <template>
-    <div class="tw-h-screen tw-w-screen tw-py-10 tw-px-4 md:tw-p-auto tw-bg-gradient-to-r tw-bg-gradient tw-from-green-400 tw-via-blue-500 tw-to-gray-800">
+    <div class="tw-min-h-full tw-min-w-full tw-py-10 tw-px-4 md:tw-p-auto tw-bg-gradient-to-r tw-bg-gradient tw-from-green-400 tw-via-blue-500 tw-to-gray-800">
         <div class="tw-flex tw-flex-col">
             <div class="">
                 <div class="tw-bg-indigo-600 tw-mb-3 tw-mx-auto tw-w-3/6 md:tw-w-2/3">
@@ -31,7 +31,7 @@
                 </svg>
             </div> -->
             <!-- component -->
-            <list-view class="tw-w-2/3" :todos="todos"
+            <list-view class="tw-w-7/8 tw-flex tw-mx-auto tw-justify-center" :todos="todos"
             v-on:reloadlist="getTodo()"/>
             <add-todo-form class="tw-flex tw-justify-center tw--mt-14" v-on:todochanged="getTodo()" />
         </div>
